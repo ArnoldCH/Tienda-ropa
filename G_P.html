@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+    <head>
+        <meta charset="utf8">
+        <title>CH-Ropa</title> <!Es el título que aparecerá en la pestaña del buscador>
+       
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/estilo.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+       
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="../js/valida.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="row">
+                <div class="col-sm-12 col-md-2 center">
+                    <img src="../img/IM1.jpg" width="120" alt="Moda de mujeres">
+                </div>
+                <div class="col-sm-12 col-md-8 center">
+                    <h2>Tienda de ropa</h2> <h1>CH</h1> <h2>OAXACA</h2>
+                    <h4>Tu mejor opción</h4>
+                </div>
+                <div class="col-sm-12 col-md-2 center">
+                    <img src="../img/IO1.jpg" width="100" alt="Moda de hombres">
+                </div>
+            </div>
+        </header>
+        <div class="container-fluid">
+            <div class="row justify-content-center h-100">
+                <div class="card login forms">
+                    <div class="card-header header">
+                        Agregar ropa 
+                    </div>
+                    <div class="card-body">
+                        <form action="../apps/recibedatos.php" method="post" onsubmit="return validateLengthMin()" >
+                            <div class="form-group">
+                                <label for="CodigoR" p style="color:white;"><h4>Codigo: </h4><label>
+                                <input type="text" id="CodigoR" name="CodigoR" placeholder="Codigo"> <br>
+                            </div>
+                            <div class="form-group">
+                                <label for="NombreR" p style="color:white;"><h4>Nombre de la prenda: </h4><label>
+                                <input type="text" id="NombreR" name="NombreR" placeholder="Nombre de la prenda"> <br>
+                            </div>
+                            <div class="form-group">
+                                <label for="NombreR" p style="color:white;"><h4>Descripcion: </h4><label>
+                                <textarea type="textArea" id="DescripcionR" name="DescripcionR" placeholder="Descripcion"></textarea>
+                                     <br>
+                            </div>
+                            <div class="form-group"> 
+                                <label for="NombreR" p style="color:white;"><h4>Genero  de la prenda: </h4></label> <br>
+                                <select>
+                                <option value="1">Dama</option>
+                                <option value="2">Caballero</option>
+                            </select>
+                            <div class="form-group">
+                                <label for="CodigoR" p style="color:white;"><h4>Precio: </h4><label>
+                                <input type="text" id="CodigoR" name="CodigoR" placeholder="Codigo"> <br>
+                            </div>
+                            </div>
+                            
+                           
+                            <div class="form-group center " name="inicio">
+                                
+                                <button class="btn btn-main rounded-lg">Iniciar sesión</button>          
+                            </div>
+            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
